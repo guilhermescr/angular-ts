@@ -1,0 +1,22 @@
+- What is Angular?
+> It's a framework based on JavaScript.
+> It's used for SPAs.
+> Components architecture.
+> It's used in huge projects.
+> Angular 2+ and AngularJS are two different versions.
+> It's the "A" in the MEAN stack.
+
+- Why Angular?
+> Well-defined project organization structure, it's simple and you can reuse code.
+> Lots of features in the tooling system: CLI, HTTP module, router etc.
+> TypeScript Native Integration.
+> Maintained by Google.
+
+- Pre-requisites
+> Basic/Intermediate HTML and CSS.
+> Great knowledge in JavaScript (language's main features and ES6+).
+> Previous experience with Node and npm is good to have.
+
+- What will we need?
+> Node.js to install Angular, other packages and to run scripts.
+> An IDE, suggestion: VS Code.

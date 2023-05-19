@@ -1,0 +1,33 @@
+:host {
+  background: #282828
+    url("https://media.cnn.com/api/v1/images/stellar/prod/150929101049-black-coffee-stock.jpg?q=x_3,y_1231,h_1684,w_2993,c_crop")
+    center no-repeat fixed;
+  background-size: 100%;
+  display: block;
+}
+
+h1 {
+  background-color: #282828;
+  padding-bottom: 10px;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-left: 25px;
+  max-width: 1300px;
+  padding-block: 20px;
+  width: 100%;
+
+  p {
+    background-color: #fff;
+    border-radius: 6px;
+    height: max-content;
+    line-height: 1.5em;
+    max-width: 500px;
+    padding: 15px 20px;
+    text-align: justify;
+  }
+}

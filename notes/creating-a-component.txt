@@ -1,0 +1,5 @@
+- Creating Component
+> To create a component, we can use the CLI;
+> The command is: ng generate <name>
+> All necessary files will be created in the project;
+> To import the component, you just need to use your selector in a HTML from another component.

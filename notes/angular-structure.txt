@@ -1,0 +1,5 @@
+- What is created after a "ng new"?
+> node_modules: project dependencies;
+> src: where we code our application;
+> src/app: main folder for components, services etc;
+> Components chunks: TS, HTML, CSS and tests;

@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  margin-left: 20px;
+}
+
+h2 {
+  color: #fff;
+  padding-top: 20px;
+  text-align: center;
+}
+
+nav {
+  margin: auto;
+  padding-block: 15px;
+  width: max-content;
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-block: 8px;
+      a {
+        color: #fff;
+        display: block;
+      }
+    }
+  }
+}
