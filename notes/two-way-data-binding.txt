@@ -1,0 +1,19 @@
+- Two Way Data Binding
+> It allows you to change props and the template by using inputs.
+> It's mandatory to import FormsModule in the main component.
+> And also to declare the ngModel in the input, besides filling the name attribute, all of them with the same value. 
+
+app.module.ts:
+NgModule({
+  declarations: [
+    AppComponent,
+    ...otherComponents
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    ...otherModules
+  ]
+});
+
+<input type="text" [(ngModel)]="name" />

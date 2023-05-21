@@ -1,0 +1,11 @@
+- Importance of interfaces
+> Every entity needs an interface.
+> It makes the code simple throughout the program.
+> Simplifies code maintenance.
+
+- Template: Name.ts
+
+export interface Name {
+  name: 'X',
+  age: 99
+}

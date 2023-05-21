@@ -1,0 +1,6 @@
+- Angular Router
+> Create a new file for Routes declarations.
+> On it, import the modules RouterModule and Routes.
+> Import them in app.module.ts.
+> Create the routes in the template.
+> Substitute the components for a <router-outlet>

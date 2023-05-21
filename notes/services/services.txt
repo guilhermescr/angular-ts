@@ -1,0 +1,18 @@
+- Services
+> It's mostly used for API requests.
+> Command: ng generate service <name>
+> You need to import it in the component and to initialize it in the constructor.
+> Database and API stuff stay at the service.ts file. Frontend stuff stay at the component.ts file.
+
+My Component:
+constructor(private myService: MyService) {}
+
+myMethod() {
+  this.myService.method();
+}
+
+Steps:
+1. Create a service.
+2. Import the service in the constructor.
+3. Activate the method.
+4. Fire the event in the component and access the service.

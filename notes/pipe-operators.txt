@@ -1,0 +1,9 @@
+- Pipe Operators
+> It helps us when we are working on strings in the templates.
+> It has many features, such as capitalizing a text.
+> Syntax: {{ data | somePipeOperator }}
+> Example: <h2>{{ "Some text here!" | uppercase }}</h2>
+
+• uppercase -> THIS IS THE TEXT
+• titlecase -> This Is The Text
+• date: "fullDate"
