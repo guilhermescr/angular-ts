@@ -1,0 +1,31 @@
+- ngFor
+> *ngFor="let item of items"
+
+class AnimalsComponent {
+  babies: { name: string, age: number }[] = [
+    {
+      name: 'John',
+      age: 10
+    },
+    {
+      name: 'Leon',
+      age: 5
+    },
+    {
+      name: 'Peter',
+      age: 2
+    },
+    {
+      name: 'Mike',
+      age: 4
+    }
+  ]
+}
+
+.html:
+<ul>
+  <li *ngFor="let baby of babies">
+    Baby: {{ baby.name }}
+    Age: {{ baby.age }}
+  </li>
+</ul>

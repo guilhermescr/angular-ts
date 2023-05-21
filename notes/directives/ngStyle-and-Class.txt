@@ -1,0 +1,23 @@
+<h1 [ngStyle]="{ 'color': 'red', border: 'none' }"></h1>
+
+CSS Classes:
+
+.ts:
+  textClasses = ['font-bold', 'font-giant'];
+
+.css:
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-giant {
+  font-size: 3em;
+}
+
+.html
+<h2 [ngClass]="textClasses"></h2>
+
+Or:
+
+<h2 [ngClass]="{ 'font-bold': 'bold', 'font-giant': '3em' }"></h2>

@@ -1,0 +1,5 @@
+- Data Interpolation
+> It's an Angular resource that helps us to work with Components.
+> Variables are created in the .ts file, inside the class. That means the variables are the properties of the class.
+> The data can be accessed in the .html, which is called template.
+> The impression is done in this way: {{ data }}

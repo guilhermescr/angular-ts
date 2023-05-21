@@ -1,0 +1,3 @@
+- Directives
+> It gives us power to do certain things in the system, like applying styles to an element.
+> They start with ng, so: ngSomething.

@@ -1,0 +1,17 @@
+- Sharing data in Angular
+> In Angular, you can pass data from a parent component to a child component.
+> On the .ts file, we can get the parent's data with the decorator @Input, which sends the data to the template.
+
+On the parent's class:
+class Parent {
+  @Input() name: string = '';
+  @Input() userData!: { email: string, role: string };
+}
+
+- React:
+<SuperButton food="Apple" />
+Result: <button>Buy Apple</button>
+
+- Angular:
+<app-super-button [food]="Apple"></app-super-button>
+Result: <button>Buy Apple</button>

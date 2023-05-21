@@ -1,0 +1,17 @@
+- Event:
+> (eventName)="nameOfTheFunction()"
+> Methods are written in the class.
+> It can be used to fetch an API.
+
+- { @Output, EventEmitter } from '@angular/core';
+> Events from a parent component to a child component.
+> (emit)="onEmit()"
+
+class TalComponent {
+  @Output() changeMyData: EventEmitter<any> = new EventEmitter();
+
+  myFunction() {
+    console.log('This is my function!');
+    this.changeMyData.emit();
+  }
+}

@@ -1,0 +1,15 @@
+- Conditional Render
+> ngIf
+> It can have dynamic values and we can compare in many ways.
+> There's an else.
+
+class ButtonComponent {
+  isHere: boolean = true;
+  content: string = 'Build Angular App';
+}
+
+<button *ngIf="isHere">I'm here!</button>
+<button *ngIf="content === 'Destruct'; else nameNotFound"></button>
+<ng-template #nameNotFound>
+  <p>Name not found :(</p>
+</ng-template>
