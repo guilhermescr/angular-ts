@@ -1,0 +1,6 @@
+- HTTP Requests
+> Requests are made in the services.
+> Import these packages: HttpClient and HttpHeaders.
+> Initialize the HttpClientModule in the app.module.ts -> import { HttpClientModule } from '@angular/common/http';
+> In the imports array inside NgModule, add the HttpClientModule.
+> private keyword in URLs is a good practice.

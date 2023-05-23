@@ -1,0 +1,9 @@
+- Fetching a unique data
+> Based on id, we get the data in the database. Usually, this id comes from the URL.
+> To get parameters in URL, use ActivatedRoute, an Angular module.
+> The HTTP request stays in the service.
+
+ActivatedRoute:
+import { ActivatedRoute } from '@angular/router';
+
+constructor(private myService: MyService, private route: ActivatedRoute) {}
