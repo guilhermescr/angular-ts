@@ -1,0 +1,11 @@
+<div [ngClass]="'form-box'">
+  <label for="username">Username:</label>
+  <input
+    type="text"
+    id="username"
+    placeholder="Insert a username..."
+    [(ngModel)]="username"
+  />
+  <button type="reset" (click)="clearUsername()">Reset Form</button>
+  <span>User: {{ username }}</span>
+</div>

@@ -1,0 +1,28 @@
+<section
+  [ngStyle]="{
+    'align-items': 'center',
+    'background-color': '#a2f1a1',
+    border: '2px solid #898989',
+    display: 'flex',
+    'flex-direction': 'column',
+    gap: '10px',
+    'justify-content': 'center',
+    padding: '15px'
+  }"
+>
+  <h1>{{ firstSectionTitle }}</h1>
+  <div>
+    <img
+      *ngIf="!isImageDestroyed"
+      [ngClass]="'cat-image'"
+      src="{{ returnImage() }}"
+      alt="Two boxes with a cat hiding himself behind one of the boxes"
+    />
+  </div>
+  <button
+    (click)="toggleImage()"
+    [ngClass]="['toggleImageStateButton', !isImageDestroyed ? 'dead' : 'alive']"
+  >
+    {{ !isImageDestroyed ? "Destroy Image" : "Recover Image" }}
+  </button>
+</section>

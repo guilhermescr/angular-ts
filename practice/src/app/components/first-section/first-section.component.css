@@ -1,0 +1,33 @@
+h1 {
+  color: #efc;
+  text-shadow: 0 0 10px #00000096;
+}
+
+.cat-image {
+  max-width: 200px;
+  width: 100%;
+}
+
+.toggleImageStateButton {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.toggleImageStateButton:hover {
+  filter: saturate(0.8);
+}
+
+.toggleImageStateButton:active {
+  opacity: 0.9;
+}
+
+.dead {
+  background-color: #ce4242;
+}
+
+.alive {
+  background-color: #2889e1;
+}
