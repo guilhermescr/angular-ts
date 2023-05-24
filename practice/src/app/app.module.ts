@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FirstSectionComponent } from './components/first-section/first-section.component';
 import { FormComponent } from './components/form/form.component';
 import { InputComponent } from './components/form/input/input.component';
+import { TasksComponent } from './components/tasks/tasks.component';
+import { TaskComponent } from './components/tasks/task/task.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { InputComponent } from './components/form/input/input.component';
     FirstSectionComponent,
     FormComponent,
     InputComponent,
+    TasksComponent,
+    TaskComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

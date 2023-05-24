@@ -6,10 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./input.component.css'],
 })
 export class InputComponent {
-  @Input() defaultUsername = 'userr';
-  @Input() username = this.defaultUsername;
+  @Input() defaultUsername: string = '';
 
   clearUsername(): void {
-    this.username = this.defaultUsername;
+    this.defaultUsername = 'userr';
   }
 }

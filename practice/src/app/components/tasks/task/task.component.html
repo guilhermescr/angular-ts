@@ -1,0 +1,6 @@
+<li>
+  <h3>{{ taskProp.title }}</h3>
+  <p>{{ taskProp.description }}</p>
+  <p *ngIf="taskProp.showTodaysDate">Date: {{ taskProp.todaysDate }}</p>
+  <button (click)="addTodaysDate(taskProp.id)">Add Today's Date</button>
+</li>

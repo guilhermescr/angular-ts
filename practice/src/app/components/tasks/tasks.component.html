@@ -1,0 +1,10 @@
+<section class="tasks-container">
+  <h2>Tasks</h2>
+  <ul class="tasks">
+    <app-task
+      *ngFor="let task of tasks"
+      [taskProp]="task"
+      (todaysDateEvent)="addNewItem($event)"
+    ></app-task>
+  </ul>
+</section>

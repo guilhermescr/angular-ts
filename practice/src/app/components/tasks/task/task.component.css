@@ -1,0 +1,33 @@
+li {
+  background-color: #590a86;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+h3 {
+  text-align: center;
+}
+
+button {
+  background-color: brown;
+  border: 1px solid #000;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 2px;
+  padding: 5px;
+  width: max-content;
+}
+
+button:hover {
+  filter: saturate(0.8);
+}
+
+button:active {
+  opacity: 0.9;
+}
