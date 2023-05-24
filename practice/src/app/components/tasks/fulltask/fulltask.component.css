@@ -1,0 +1,17 @@
+:host > * {
+  margin: 8px;
+}
+
+button {
+  background-color: #292929;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  display: block;
+  padding: 9px;
+}

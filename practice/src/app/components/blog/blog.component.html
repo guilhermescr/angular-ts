@@ -1,0 +1,8 @@
+<h2>My Blog</h2>
+<button *ngIf="!IsFetchDone" (click)="toggleFetchDone()">Get Comments</button>
+<section class="comments" *ngIf="IsFetchDone">
+  <div class="comment" *ngFor="let comment of comments">
+    <h3>Author: {{ comment.author }}</h3>
+    <p>Author said: {{ comment.body }}</p>
+  </div>
+</section>

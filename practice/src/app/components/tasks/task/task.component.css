@@ -8,8 +8,14 @@ li {
   padding: 15px;
 }
 
+a,
 h3 {
+  color: #fff;
   text-align: center;
+}
+
+a:hover > h3 {
+  color: #efafef;
 }
 
 button {
