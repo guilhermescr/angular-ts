@@ -1,0 +1,77 @@
+.users-container {
+  background-color: #630e79;
+  padding: 20px;
+}
+
+.users-container * {
+  color: #fff;
+}
+
+.users-container h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+}
+
+.users li {
+  align-items: center;
+  background-color: #a02bbd;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-evenly;
+  max-width: 270px;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+}
+
+.users li:hover {
+  filter: saturate(0.9);
+  transform: scale(0.98);
+}
+
+.users li:active {
+  opacity: 0.9;
+}
+
+.deleteUserButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+}
+
+.deleteUserButton:hover {
+  transform: scale(0.95);
+}
+
+.deleteUserButton:active {
+  filter: drop-shadow(0 0 3px #e00909);
+  opacity: 0.9;
+}
+
+.deleteUserButton svg {
+  fill: #fff;
+  filter: drop-shadow(0 0 1px #e03434);
+}
+
+.users img {
+  max-width: 200px;
+  width: 100%;
+}
+
+.users li h2 {
+  width: 100%;
+}
