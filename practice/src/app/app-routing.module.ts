@@ -6,6 +6,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { FormComponent } from './components/form/form.component';
 import { FulltaskComponent } from './components/tasks/fulltask/fulltask.component';
 import { FbComponent } from './components/fb/fb.component';
+import { FbAuthPageComponent } from './components/fb-auth-page/fb-auth-page.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'firebase',
     component: FbComponent,
+  },
+  {
+    path: 'authentication',
+    component: FbAuthPageComponent,
   },
   {
     path: '',

@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 // import {Angular} from '@angular/fire/'
 import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { environment } from '../environments/environment';
 
@@ -18,6 +19,7 @@ import { BlogComponent } from './components/blog/blog.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FulltaskComponent } from './components/tasks/fulltask/fulltask.component';
 import { FbComponent } from './components/fb/fb.component';
+import { FbAuthPageComponent } from './components/fb-auth-page/fb-auth-page.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { FbComponent } from './components/fb/fb.component';
     BlogComponent,
     FulltaskComponent,
     FbComponent,
+    FbAuthPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import { FbComponent } from './components/fb/fb.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

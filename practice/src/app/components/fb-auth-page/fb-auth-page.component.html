@@ -1,0 +1,13 @@
+<section *ngIf="hasLoggedIn" class="user-profile">
+  <img
+    src="{{ authUser.photoURL }}"
+    alt="{{ authUser.displayName }} Profile Picture"
+  />
+
+  <h1>User: {{ authUser.displayName }}</h1>
+
+  <p>E-mail: {{ authUser.email }}</p>
+</section>
+<button (click)="consoleUserData()">Console User Data</button>
+<button (click)="SignIn()">Sign In With Google</button>
+<button (click)="SignOut()">Sign Out</button>
