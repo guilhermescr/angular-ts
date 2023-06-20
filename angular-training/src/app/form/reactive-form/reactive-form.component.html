@@ -1,0 +1,60 @@
+<h2>Reactive Form</h2>
+
+<form [ngClass]="'reactive-form'" [formGroup]="reactiveForm">
+  <div [ngClass]="'form-control'">
+    <span *ngIf="getFormControlValidation('name')" [ngClass]="'invalid'"
+      >Name input is required.</span
+    >
+    <label for="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      formControlName="name"
+      placeholder="Name..."
+      autoComplete="off"
+      required
+    />
+  </div>
+
+  <div [ngClass]="'form-control'">
+    <span *ngIf="getFormControlValidation('email')" [ngClass]="'invalid'"
+      >E-mail input is required.</span
+    >
+    <label for="email">E-mail:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      formControlName="email"
+      placeholder="E-mail..."
+      autoComplete="off"
+      required
+    />
+  </div>
+
+  <div [ngClass]="'form-control'">
+    <span *ngIf="getFormControlValidation('password')" [ngClass]="'invalid'"
+      >Password input is required.</span
+    >
+    <label for="password">Password:</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      formControlName="password"
+      placeholder="Password..."
+      autoComplete="off"
+      required
+    />
+  </div>
+
+  <button
+    type="submit"
+    (click)="onSubmit()"
+    [disabled]="reactiveForm.invalid"
+    [ngClass]="reactiveForm.invalid ? 'disabled' : 'active'"
+  >
+    Submit Form
+  </button>
+</form>

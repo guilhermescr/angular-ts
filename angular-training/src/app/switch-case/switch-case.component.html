@@ -1,0 +1,49 @@
+<h2>ngSwitch, ngSwitchCase e ngSwitchDefault</h2>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item" (click)="currentTab = 'home'">
+          <a class="nav-link" [class.active]="currentTab === 'home'">Home</a>
+        </li>
+
+        <li class="nav-item" (click)="currentTab = 'features'">
+          <a class="nav-link" [class.active]="currentTab === 'features'"
+            >Features</a
+          >
+        </li>
+
+        <li class="nav-item" (click)="currentTab = 'pricing'">
+          <a class="nav-link" [class.active]="currentTab === 'pricing'"
+            >Pricing</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div [ngSwitch]="currentTab">
+  <p *ngSwitchCase="'features'">
+    Our features are so different compared to other brands.
+  </p>
+  <p *ngSwitchCase="'pricing'">
+    We have the cheapest SaaS (Software As A Service) in the world! Good pricing
+    you find here.
+  </p>
+  <p *ngSwitchDefault>Welcome to Home. Take a look at our products below!</p>
+</div>

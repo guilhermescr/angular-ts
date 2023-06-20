@@ -1,0 +1,15 @@
+<h2>Life Cycle Hooks</h2>
+<ul>
+  <li>ngOnChanges</li>
+  <li>ngOnInit</li>
+  <li>ngDoCheck</li>
+  <li>ngAfterContentInit</li>
+  <li>ngAfterContentChecked</li>
+  <li>ngAfterViewChecked</li>
+  <li>ngOnDestroy</li>
+</ul>
+
+<h3>ngOnChanges</h3>
+<p #randomNumberParagraph>Random Number: {{ lifeCycleHooks.randomNumber }}</p>
+<button (click)="getRandomNumber()">Get Random Number</button>
+<button (click)="addCoolNumberTextToSubHeading()">Add Cool Number Text To SubHeading</button>

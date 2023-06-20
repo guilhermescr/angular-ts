@@ -1,0 +1,19 @@
+<h1>Angular Forms</h1>
+
+<section>
+  <h2>User in Reactive Form</h2>
+
+  <div
+    [ngStyle]="{ 'padding-left': '15px' }"
+    *ngIf="user; else notLoggedInMessage"
+  >
+    <h3>Name: {{ user.name }}</h3>
+    <p>E-mail: {{ user.email }}</p>
+    <p>Password: {{ user.password }}</p>
+  </div>
+  <ng-template #notLoggedInMessage>
+    <p [ngStyle]="{ 'padding-left': '15px' }">You didn't sign up yet.</p>
+  </ng-template>
+</section>
+
+<app-reactive-form (reactiveFormSubmitEvent)="signUpUser($event)"></app-reactive-form>

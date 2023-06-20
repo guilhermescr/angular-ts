@@ -1,0 +1,22 @@
+:host {
+  align-items: center;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .cards {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 20px;
+    min-height: calc(100vh - 126px);
+    justify-content: center;
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+<button
+  class="btn btn-primary back-to-home-btn"
+  [ngStyle]="{ padding: 0 }"
+  *ngIf="currentTab !== '/'"
+>
+  <a
+    routerLink="/"
+    [ngStyle]="{ color: '#fff', display: 'block', padding: '6px 12px' }"
+    >Back To Home</a
+  >
+</button>
+
+<router-outlet></router-outlet>

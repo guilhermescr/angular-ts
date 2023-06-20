@@ -1,0 +1,27 @@
+:host {
+  article {
+    margin-inline: auto;
+    max-width: 800px;
+    padding: 20px;
+
+    h3 {
+      padding-block: 12px;
+    }
+
+    strong {
+      cursor: pointer;
+    }
+
+    p {
+      line-height: 1.5em;
+      text-align: justify;
+    }
+
+    img {
+      border-radius: 5px;
+      display: block;
+      margin-inline: auto;
+      max-width: 250px;
+    }
+  }
+}

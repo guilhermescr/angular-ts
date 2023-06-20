@@ -1,0 +1,5 @@
+<h2>Angular Material</h2>
+
+<section [ngClass]="'cards'">
+  <app-pokemon-card *ngFor="let pokemon of pokemonList" [pokemon]="pokemon"></app-pokemon-card>
+</section>
