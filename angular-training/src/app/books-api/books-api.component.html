@@ -1,0 +1,13 @@
+<div *ngIf="books$ | async as books">
+  <article *ngFor="let book of books">
+    <img
+      src="{{ book.volumeInfo.imageLinks?.thumbnail }}"
+      alt="{{ book.volumeInfo.title }} Thumbnail"
+    />
+    <h1>{{ book.volumeInfo.title }}</h1>
+    <p>{{ book.volumeInfo.rating }}</p>
+    <p *ngFor="let author of book.volumeInfo.authors">{{ author }}</p>
+    <p *ngFor="let category of book.volumeInfo.categories">{{ category }}</p>
+    <p>{{ book.volumeInfo.description }}</p>
+  </article>
+</div>

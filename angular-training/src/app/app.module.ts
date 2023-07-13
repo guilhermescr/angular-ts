@@ -13,6 +13,11 @@ import { YellowMarkerCustomDirectiveComponent } from './yellow-marker-custom-dir
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './testing-angular-material/angular-material.module';
 import { FormModule } from './form/form.module';
+import { FirstTestSuiteComponent } from './first-test-suite/first-test-suite.component';
+import { StoreModule } from '@ngrx/store';
+import { BooksApiComponent } from './books-api/books-api.component';
+import { booksReducer } from './books-api/state/books.reducer';
+import { collectionReducer } from './books-api/state/collection.reducer';
 
 @NgModule({
   declarations: [
@@ -24,6 +29,8 @@ import { FormModule } from './form/form.module';
     ChildComponent,
     YellowMarkerDirective,
     YellowMarkerCustomDirectiveComponent,
+    FirstTestSuiteComponent,
+    BooksApiComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +38,10 @@ import { FormModule } from './form/form.module';
     BrowserAnimationsModule,
     AngularMaterialModule,
     FormModule,
+    StoreModule.forRoot({
+      books: booksReducer,
+      collection: collectionReducer,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

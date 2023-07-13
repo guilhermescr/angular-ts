@@ -1,0 +1,12 @@
+:host {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+
+  * {
+    text-align: center;
+  }
+}

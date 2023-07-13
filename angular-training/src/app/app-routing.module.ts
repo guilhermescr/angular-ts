@@ -7,6 +7,7 @@ import { TestingChildrenComponent } from './testing-children/testing-children.co
 import { YellowMarkerCustomDirectiveComponent } from './yellow-marker-custom-directive/yellow-marker-custom-directive.component';
 import { TestingAngularMaterialComponent } from './testing-angular-material/testing-angular-material.component';
 import { FormComponent } from './form/form.component';
+import { BooksApiComponent } from './books-api/books-api.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'form',
     component: FormComponent,
+  },
+  {
+    path: 'books-test-api',
+    component: BooksApiComponent,
   },
 ];
 
