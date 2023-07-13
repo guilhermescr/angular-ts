@@ -18,6 +18,7 @@ import { StoreModule } from '@ngrx/store';
 import { BooksApiComponent } from './books-api/books-api.component';
 import { booksReducer } from './books-api/state/books.reducer';
 import { collectionReducer } from './books-api/state/collection.reducer';
+import { RxjsOperatorsComponent } from './rxjs-operators/rxjs-operators.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { collectionReducer } from './books-api/state/collection.reducer';
     YellowMarkerCustomDirectiveComponent,
     FirstTestSuiteComponent,
     BooksApiComponent,
+    RxjsOperatorsComponent,
   ],
   imports: [
     BrowserModule,

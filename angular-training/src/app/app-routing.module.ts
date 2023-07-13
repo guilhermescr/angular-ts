@@ -8,6 +8,7 @@ import { YellowMarkerCustomDirectiveComponent } from './yellow-marker-custom-dir
 import { TestingAngularMaterialComponent } from './testing-angular-material/testing-angular-material.component';
 import { FormComponent } from './form/form.component';
 import { BooksApiComponent } from './books-api/books-api.component';
+import { RxjsOperatorsComponent } from './rxjs-operators/rxjs-operators.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'books-test-api',
     component: BooksApiComponent,
+  },
+  {
+    path: 'rxjs-operators',
+    component: RxjsOperatorsComponent,
   },
 ];
 
