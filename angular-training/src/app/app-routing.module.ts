@@ -9,6 +9,7 @@ import { TestingAngularMaterialComponent } from './testing-angular-material/test
 import { FormComponent } from './form/form.component';
 import { BooksApiComponent } from './books-api/books-api.component';
 import { RxjsOperatorsComponent } from './rxjs-operators/rxjs-operators.component';
+import { CounterNgrxComponent } from './counter-ngrx/counter-ngrx.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'rxjs-operators',
     component: RxjsOperatorsComponent,
+  },
+  {
+    path: 'counter-ngrx',
+    component: CounterNgrxComponent,
   },
 ];
 

@@ -19,6 +19,8 @@ import { BooksApiComponent } from './books-api/books-api.component';
 import { booksReducer } from './books-api/state/books.reducer';
 import { collectionReducer } from './books-api/state/collection.reducer';
 import { RxjsOperatorsComponent } from './rxjs-operators/rxjs-operators.component';
+import { CounterNgrxComponent } from './counter-ngrx/counter-ngrx.component';
+import { counterReducer } from './counter-ngrx/state/counter.reducer';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { RxjsOperatorsComponent } from './rxjs-operators/rxjs-operators.componen
     FirstTestSuiteComponent,
     BooksApiComponent,
     RxjsOperatorsComponent,
+    CounterNgrxComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,7 @@ import { RxjsOperatorsComponent } from './rxjs-operators/rxjs-operators.componen
     FormModule,
     StoreModule.forRoot({
       books: booksReducer,
-      collection: collectionReducer,
+      counter: counterReducer,
     }),
   ],
   providers: [],
